@@ -10,16 +10,15 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>bingo.cn</groupId>
+    <groupId>icebin.cn</groupId>
     <artifactId>personal-website</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>blog-app</module>
-        <module>blog-core</module>
+
     </modules>
     <name>personal-website</name>
-    <description>bingo的个人博客</description>
+    <description>icebin的个人博客</description>
 
 
 
