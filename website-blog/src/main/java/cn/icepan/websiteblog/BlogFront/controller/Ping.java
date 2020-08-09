@@ -1,4 +1,4 @@
-package cn.icepan.websiteblog.controller;
+package cn.icepan.websiteblog.BlogFront.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
