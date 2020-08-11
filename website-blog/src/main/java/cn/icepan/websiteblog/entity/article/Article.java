@@ -9,14 +9,14 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
 
-/**
+/*/**
  * @Author icepan
  * @Date 2020/8/11
- * @Description
+ * @Description Article MongoDB Collection
  **/
 @Data
 @Accessors(chain = true)
-@Document
+@Document(collection = "articles_collection")
 public class Article{
     @Id
     protected String id;
