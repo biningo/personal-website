@@ -1,4 +1,4 @@
-package cn.icepan.websiteblog.BlogFront.controller;
+package cn.icepan.websiteblog.BlogView.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2020-08-09
  **/
 
-@CrossOrigin("http://localhost:3000")
 @RestController
 @RequestMapping("/blog")
-public class BlogController {
+public class BlogViewController {
 
 
 
