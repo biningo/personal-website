@@ -1,0 +1,10 @@
+server:
+  port: 8000
+spring:
+  data:
+    mongodb:
+      host: '118.178.180.115'
+      port: 27017
+      username: 'icepan'
+      password: '55555'
+      database: 'icepan'
