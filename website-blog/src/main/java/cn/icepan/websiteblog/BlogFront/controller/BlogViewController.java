@@ -1,6 +1,5 @@
-package cn.icepan.websiteblog.BlogView.controller;
+package cn.icepan.websiteblog.BlogFront.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 /*/**
