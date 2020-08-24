@@ -9,7 +9,7 @@
     </parent>
     <artifactId>website</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>website</name>
+    <name>website-gateway</name>
     <description>website</description>
 
     <properties>
