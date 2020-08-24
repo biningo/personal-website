@@ -19,6 +19,7 @@
         <module>website-gateway</module>
         <module>website-blog</module>
         <module>website-common</module>
+        <module>website-search</module>
     </modules>
     <name>personal-website</name>
     <description>icepan的个人博客</description>
