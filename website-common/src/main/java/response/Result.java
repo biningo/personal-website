@@ -1,6 +1,7 @@
 package response;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /***
  *@Author icepan
@@ -21,9 +22,24 @@ public class Result extends HashMap<String, Object> {
         put(ResultKey.MSG, msg);
     }
 
-    public static Result OK() {
-        return new Result(200, "OK");
+    public Result(Integer code,String msg,Map<String,Object> data){
+        this(code,msg);
+        for(Entry<String,Object> entry:data.entrySet()){
+            put(entry.getKey(),entry.getValue());
+        }
     }
+
+    public static Result SUCCESS() {
+        return new Result(200, "success");
+    }
+    public static Result SUCCESS(String msg){
+        return new Result(200,msg);
+    }
+    public static Result SUCCESS(String msg,Map<String,Object> data){
+        return new Result(200,msg,data);
+    }
+
+
 
 
 }
