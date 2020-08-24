@@ -14,8 +14,9 @@
     <artifactId>personal-website</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
-        <module>website</module>
+        <module>website-gateway</module>
         <module>website-blog</module>
         <module>website-common</module>
     </modules>
@@ -31,18 +32,26 @@
         <druid.version>1.1.12</druid.version>
         <mysql.version>8.0.21</mysql.version>
         <lombok.version>1.18.4</lombok.version>
+        <hutool.version>5.4.0</hutool.version>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
 
+<!--            工具包         -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
 
+<!--            SpringBoot   -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
@@ -50,8 +59,8 @@
             </dependency>
 
 
-            <!--            热加载-->
 
+            <!--            热加载-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-devtools</artifactId>
@@ -66,7 +75,7 @@
             </dependency>
 
 
-            <!--数据库相关包-->
+            <!--mysql数据库相关包-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -88,17 +97,14 @@
                 <version>${druid.version}</version>
             </dependency>
 
-            <!--            mongodb-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-mongodb</artifactId>
-                <version>${springboot.version}</version>
-            </dependency>
+
 
 
         </dependencies>
     </dependencyManagement>
 
+
+<!--    jar包构建  -->
     <build>
         <finalName>icepan-website</finalName>
         <plugins>

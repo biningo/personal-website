@@ -1,4 +1,4 @@
-package cn.icepan.website.controller;
+package cn.icepan.website.web;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
