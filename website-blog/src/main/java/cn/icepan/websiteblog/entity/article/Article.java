@@ -1,23 +1,23 @@
-package cn.icepan.websiteblog.entity.category;
+package cn.icepan.websiteblog.entity.article;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 
-
-/*/**
+/***
  *@Author icepan
- *@Date 2020/8/11 下午2:08
+ *@Date 2020/8/18 上午11:27
  *@Description
  *
- **/
+ ***/
+
 
 @Data
-@Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
-    private String id;
+public class Article {
+
+    private Long id;
     private String title;
+
 }

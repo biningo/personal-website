@@ -13,14 +13,10 @@ import java.util.Date;
  **/
 @Data
 @Accessors(chain = true)
-public class Article{
-    protected String id;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-    protected Date createAt;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-    protected Date deleteAt;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-    protected Date updateAt;
+public class ArticleES {
+    protected Long id;
+    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
+    protected Date uploadTime;
     private String title;
     private String content;
     private String category;

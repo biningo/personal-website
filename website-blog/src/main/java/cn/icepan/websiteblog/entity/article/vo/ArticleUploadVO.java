@@ -1,6 +1,6 @@
 package cn.icepan.websiteblog.entity.article.vo;
 
-import cn.icepan.websiteblog.entity.article.Article;
+import cn.icepan.websiteblog.entity.article.ArticleES;
 import lombok.Data;
 
 /***
@@ -15,16 +15,16 @@ public class ArticleUploadVO extends ArticleBaseVO {
     private String content;
 
     //ArticleUploadVo => Article
-    public Article toArticleEntity(){
-        return new Article()
+    public ArticleES toArticleEntity(){
+        return new ArticleES()
                 .setId(this.getId())
                 .setTitle(this.getTitle())
                 .setCategory(this.getCategory())
                 .setContent(this.getContent())
-                .setCreateAt(this.getTime());
+                .setUploadTime(this.getUploadTime());
     }
     //Article => ArticleUploadVo
-    public void toSelf(Article article){
+    public void toSelf(ArticleES article){
         this.setId(article.getId());
     }
 

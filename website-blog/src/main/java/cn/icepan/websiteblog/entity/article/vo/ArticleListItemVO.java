@@ -9,5 +9,4 @@ import lombok.Data;
 
 @Data
 public class ArticleListItemVO extends ArticleBaseVO {
-    private String id;
 }
