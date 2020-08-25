@@ -1,4 +1,4 @@
-package cn.icepan.websiteblog.entity.article;
+package cn.icepan.websiteblog.entity.article.es;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
