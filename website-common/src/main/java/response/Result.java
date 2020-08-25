@@ -13,13 +13,14 @@ import java.util.Map;
 
 public class Result extends HashMap<String, Object> {
 
-
+    public static final String CODE="code";
+    public static final String MSG = "msg";
     public Result() {
     }
 
     public Result(Integer code, String msg) {
-        put(ResultKey.CODE, code);
-        put(ResultKey.MSG, msg);
+        put(CODE, code);
+        put(MSG, msg);
     }
 
     public Result(Integer code,String msg,Map<String,Object> data){
@@ -30,10 +31,10 @@ public class Result extends HashMap<String, Object> {
     }
 
     public static Result SUCCESS() {
-        return new Result(200, "success");
+        return new Result(ResultCode.SUCCESS, "success");
     }
     public static Result SUCCESS(String msg){
-        return new Result(200,msg);
+        return new Result(ResultCode.SUCCESS,msg);
     }
     public static Result SUCCESS(String msg,Map<String,Object> data){
         return new Result(200,msg,data);
