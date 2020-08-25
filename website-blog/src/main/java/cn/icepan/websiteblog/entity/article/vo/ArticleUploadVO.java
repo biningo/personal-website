@@ -1,6 +1,6 @@
 package cn.icepan.websiteblog.entity.article.vo;
 
-import cn.icepan.websiteblog.entity.article.ArticleES;
+import cn.icepan.websiteblog.entity.article.es.ArticleES;
 import lombok.Data;
 
 /***
