@@ -20,6 +20,11 @@ public class CategoryService implements CategoryServiceImpl {
     }
 
     @Override
+    public List<String> SelectAll() {
+        return null;
+    }
+
+    @Override
     public List<CategoryVo> GetByTitle() {
         return null;
     }
