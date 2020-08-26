@@ -12,7 +12,7 @@ import response.Result;
  *
  ***/
 
-@RestController
+@RestController("adminping")
 @RequestMapping("admin")
 public class ping {
 
